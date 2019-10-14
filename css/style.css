@@ -70,21 +70,19 @@ body {
 .folder-inside::before {
   content: "";
   /* use linear gradients to create the lines */
-  background: -webkit-repeating-linear-gradient(145deg, #ffffff,
-    #ffffff 10px, #333333 7px, #333333 20px);
-  background: repeating-linear-gradient(0deg, #ffffff,
-    #ffffff 10px, #333333 10px, #333333 20px);
-    position: absolute;
-    top: -37px;
-    left: 65px;
-    width: 200px;
-    height: 290px;
-    color: #343434;
-    font-size: 60px;
-    line-height: 30px;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    opacity: 0.15;
+  background: -webkit-repeating-linear-gradient(145deg, #ffffff, #ffffff 10px, #333333 7px, #333333 20px);
+  background: repeating-linear-gradient(0deg, #ffffff, #ffffff 10px, #333333 10px, #333333 20px);
+  position: absolute;
+  top: -37px;
+  left: 65px;
+  width: 200px;
+  height: 290px;
+  color: #343434;
+  font-size: 60px;
+  line-height: 30px;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  opacity: 0.15;
 }
 
 /* folder rotates when hover on it */
