@@ -24,7 +24,7 @@ body {
 .folder::before {
   width: 80px;
   height: 20px;
-  content: "";
+  content: '';
   background: #ffd480;
   position: absolute;
   top: -20px;
@@ -37,7 +37,7 @@ body {
   width: 340px;
   height: 210px;
   position: absolute;
-  content: "";
+  content: '';
   background: #ffcb66;
   top: 40px;
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
@@ -68,7 +68,7 @@ body {
 
 /* this is the lines on the paper */
 .folder-inside::before {
-  content: "";
+  content: '';
   /* use linear gradients to create the lines */
   background: -webkit-repeating-linear-gradient(145deg, #ffffff, #ffffff 10px, #333333 7px, #333333 20px);
   background: repeating-linear-gradient(0deg, #ffffff, #ffffff 10px, #333333 10px, #333333 20px);
