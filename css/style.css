@@ -1,8 +1,8 @@
 body {
   background: #99ccff;
 }
-/* This is for the back flap of the folder */
 
+/* Back flap of the folder */
 .folder {
   -webkit-perspective: 500px;
   perspective: 500px;
@@ -20,7 +20,7 @@ body {
   transition: all 300ms ease;
 }
 
-/* Folder's tab */
+/* folder's tab */
 .folder::before {
   width: 80px;
   height: 20px;
@@ -32,7 +32,7 @@ body {
   border-top-right-radius: 5px;
 }
 
-/* folder's front flap */
+/* folder's front tab */
 .folder::after {
   width: 340px;
   height: 210px;
@@ -43,14 +43,14 @@ body {
   box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  /* transform property rotates the front flap of the folder so it looks 3D */
+  /* transform property rotates the front flap a bit to make it seem 3D */
   -webkit-transform: rotateX(-10deg);
   transform: rotateX(-10deg);
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
 
-/* Paper inside the folder */
+/* paper inside the folder */
 .folder-inside {
   width: 320px;
   height: 200px;
@@ -66,39 +66,15 @@ body {
   transition: all 200ms ease;
 }
 
-/* this is the lines on the paper */
-.folder-inside::before {
+/* lines on the paper */
+.folder-inside:before {
   content: '';
   /* use linear gradients to create the lines */
   background: -webkit-repeating-linear-gradient(145deg, #ffffff, #ffffff 10px, #333333 7px, #333333 20px);
   background: repeating-linear-gradient(0deg, #ffffff, #ffffff 10px, #333333 10px, #333333 20px);
-  position: absolute;
   top: -37px;
   left: 65px;
   width: 200px;
   height: 290px;
   color: #343434;
-  font-size: 60px;
-  line-height: 30px;
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  opacity: 0.15;
 }
-
-/* folder rotates when hover on it */
-.folder:hover {
-  -webkit-transform: translate(-50%, -52%);
-  transform: translate(-50%, -52%);
-}
-
-.folder:hover::after {
-  -webkit-transform: rotateX(-15deg);
-  transform: rotateX(-15deg);
-}
-
-.folder:hover, .folder-inside {
-  -webkit-transform: rotate(-7deg) translateY(-15%);
-  transform: rotate(-7deg) translateY(-15%);
-}
-
-/* hover over folder to see the effect in action */
