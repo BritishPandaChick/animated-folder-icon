@@ -1,5 +1,5 @@
 # Animated Folder Icon
-CodePlayer CSS Animated Folder Icon project. Made with HTML and CSS.
+CodePlayer CSS Animated Folder Icon project.
 
 ## Instructions
 Clone repo or download zip file. Open index.html file in browser.
